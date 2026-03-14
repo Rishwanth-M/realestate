@@ -39,3 +39,55 @@
   font-size:18px;
   font-weight:500;
 }
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+  .stats-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+  }
+
+  .stats-title{
+    font-size:30px;
+  }
+
+  .stat-box h3{
+    font-size:36px;
+  }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:600px){
+
+  .stats-section{
+    padding:60px 20px;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .stats-title{
+    font-size:26px;
+  }
+
+  .stats-desc{
+    font-size:15px;
+  }
+
+  .stat-box h3{
+    font-size:32px;
+  }
+
+  .stat-box p{
+    font-size:16px;
+  }
+
+}
