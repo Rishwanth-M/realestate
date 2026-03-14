@@ -1,0 +1,63 @@
+.recruiters-section{
+  padding:70px 40px;
+  text-align:center;
+  background:#f7f7f7;
+}
+
+.recruiters-title{
+  font-size:34px;
+  font-weight:700;
+  margin-bottom:60px;
+}
+
+/* SLIDER */
+
+.logo-slider{
+  overflow:hidden;
+  position:relative;
+  width:100%;
+}
+
+/* TRACK */
+
+.logo-track{
+  display:flex;
+  width:calc(250px * 12);
+  animation:scroll 20s linear infinite;
+}
+
+/* LOGO */
+
+.logo-item{
+  width:250px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.logo-item img{
+  width:120px;
+  opacity:0.8;
+  transition:0.3s;
+}
+
+.logo-item img:hover{
+  opacity:1;
+  transform:scale(1.05);
+}
+
+/* ANIMATION */
+
+@keyframes scroll{
+  0%{
+    transform:translateX(0);
+  }
+
+  100%{
+    transform:translateX(-50%);
+  }
+}
+
+.logo-slider:hover .logo-track{
+  animation-play-state: paused;
+}
