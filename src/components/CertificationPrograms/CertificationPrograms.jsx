@@ -2,39 +2,39 @@ import React from "react";
 import "./CertificationPrograms.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 
 const programs = [
   {
-    title: "Post Graduate Certificate in Machine Learning",
+    title: "Post Graduate Certificate in Data Science & AI",
     inst: "IITB",
     duration: "8 Months",
     img: "/certificates/cert1.jpg"
   },
   {
-    title: "Advanced Certificate In Digital Marketing",
-    inst: "MICA",
-    duration: "31 Weeks",
+    title: "AI & Machine Learning Program",
+    inst: "IITB",
+    duration: "6 Months",
     img: "/certificates/cert2.jpg"
   },
   {
-    title: "Post Graduate Certificate in Data Science & AI",
+    title: "Post Graduate Certificate in Machine Learning",
     inst: "IITB",
     duration: "8 Months",
     img: "/certificates/cert3.jpg"
   },
   {
-    title: "AI & Machine Learning Program",
-    inst: "IITB",
-    duration: "6 Months",
+    title: "Advanced Digital Marketing Program",
+    inst: "MICA",
+    duration: "31 Weeks",
     img: "/certificates/cert4.jpg"
   }
 ];
 
-const CertificationPrograms = () => {
+export default function CertificationPrograms() {
   return (
     <section className="cert-section">
 
@@ -45,15 +45,10 @@ const CertificationPrograms = () => {
       <div className="cert-slider-wrapper">
 
         <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={25}
-          loop={true}
+          modules={[Navigation]}
           navigation
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true
-          }}
+          spaceBetween={30}
+          loop={true}
 
           breakpoints={{
             0: {
@@ -73,7 +68,7 @@ const CertificationPrograms = () => {
 
               <div className="cert-card">
 
-                <img src={item.img} alt={item.title} />
+                <img src={item.img} alt="" />
 
                 <div className="cert-content">
 
@@ -111,6 +106,4 @@ const CertificationPrograms = () => {
 
     </section>
   );
-};
-
-export default CertificationPrograms;
+}
