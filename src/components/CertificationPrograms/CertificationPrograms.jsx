@@ -2,7 +2,7 @@ import React from "react";
 import "./CertificationPrograms.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, FreeMode } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,7 +15,7 @@ const programs = [
     img: "/certificates/cert1.jpg"
   },
   {
-    title: "MICA's Advanced Certificate In Digital Marketing",
+    title: "Advanced Certificate In Digital Marketing",
     inst: "MICA",
     duration: "31 Weeks",
     img: "/certificates/cert2.jpg"
@@ -34,8 +34,7 @@ const programs = [
   }
 ];
 
-export default function CertificationPrograms() {
-
+const CertificationPrograms = () => {
   return (
     <section className="cert-section">
 
@@ -46,18 +45,26 @@ export default function CertificationPrograms() {
       <div className="cert-slider-wrapper">
 
         <Swiper
-          modules={[Navigation, Autoplay, FreeMode]}
-          slidesPerView={3.2}
+          modules={[Navigation, Autoplay]}
           spaceBetween={25}
-          centeredSlides={false}
           loop={true}
-          navigation={true}
-          freeMode={true}
-          speed={5000}
+          navigation
           autoplay={{
-            delay: 0,
+            delay: 3000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true
+          }}
+
+          breakpoints={{
+            0: {
+              slidesPerView: 1
+            },
+            768: {
+              slidesPerView: 2
+            },
+            1024: {
+              slidesPerView: 3
+            }
           }}
         >
 
@@ -104,4 +111,6 @@ export default function CertificationPrograms() {
 
     </section>
   );
-}
+};
+
+export default CertificationPrograms;
