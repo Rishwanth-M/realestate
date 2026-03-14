@@ -50,3 +50,65 @@
   transform:translateY(-6px);
   box-shadow:0 12px 25px rgba(0,0,0,0.12);
 }
+
+
+/* ================= LAPTOP ================= */
+
+@media (max-width:1200px){
+
+  .city-grid{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+  .city-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .city-title{
+    font-size:30px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:600px){
+
+  .city-section{
+    padding:60px 20px;
+  }
+
+  .city-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+  }
+
+  .city-card img{
+    width:100px;
+    height:100px;
+  }
+
+  .city-card h3{
+    font-size:18px;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+  .city-grid{
+    grid-template-columns:1fr;
+  }
+
+}
