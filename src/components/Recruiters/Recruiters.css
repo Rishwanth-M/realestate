@@ -52,7 +52,6 @@
   0%{
     transform:translateX(0);
   }
-
   100%{
     transform:translateX(-50%);
   }
@@ -60,4 +59,56 @@
 
 .logo-slider:hover .logo-track{
   animation-play-state: paused;
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+  .logo-track{
+    width:calc(200px * 12);
+  }
+
+  .logo-item{
+    width:200px;
+  }
+
+  .logo-item img{
+    width:100px;
+  }
+
+  .recruiters-title{
+    font-size:28px;
+  }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:600px){
+
+  .recruiters-section{
+    padding:60px 20px;
+  }
+
+  .logo-track{
+    width:calc(160px * 12);
+    animation:scroll 15s linear infinite;
+  }
+
+  .logo-item{
+    width:160px;
+  }
+
+  .logo-item img{
+    width:80px;
+  }
+
+  .recruiters-title{
+    font-size:24px;
+    margin-bottom:40px;
+  }
+
 }
