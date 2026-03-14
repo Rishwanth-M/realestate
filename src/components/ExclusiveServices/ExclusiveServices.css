@@ -81,6 +81,157 @@
   right:70px;
 }
 
+
+.exclusive-section{
+  padding:80px 0;
+  text-align:center;
+}
+
+.exclusive-title{
+  font-size:36px;
+  font-weight:700;
+  margin-bottom:40px;
+  color:#1a2b44;
+}
+
+/* SLIDER */
+
+.exclusive-slider{
+  max-width:1200px;
+  margin:auto;
+  position:relative;
+  border-radius:14px;
+  overflow:hidden;
+}
+
+/* IMAGE */
+
+.slider-image img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+/* SIDE GRADIENT */
+
+.exclusive-slider::before,
+.exclusive-slider::after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:180px;
+  height:100%;
+  z-index:2;
+  pointer-events:none;
+}
+
+.exclusive-slider::before{
+  left:0;
+  background:linear-gradient(to right,#7a001d,transparent);
+}
+
+.exclusive-slider::after{
+  right:0;
+  background:linear-gradient(to left,#7a001d,transparent);
+}
+
+/* BUTTON */
+
+.slider-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:#7a001d;
+  border:none;
+  color:white;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  font-size:18px;
+  cursor:pointer;
+  z-index:5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.slider-btn.left{
+  left:70px;
+}
+
+.slider-btn.right{
+  right:70px;
+}
+
+.slider-btn:hover{
+  background:#5a0016;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+  .exclusive-title{
+    font-size:30px;
+  }
+
+  .slider-image img{
+    height:220px;
+  }
+
+  .exclusive-slider::before,
+  .exclusive-slider::after{
+    width:120px;
+  }
+
+  .slider-btn.left{
+    left:40px;
+  }
+
+  .slider-btn.right{
+    right:40px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:600px){
+
+  .exclusive-section{
+    padding:60px 20px;
+  }
+
+  .exclusive-title{
+    font-size:26px;
+  }
+
+  .slider-image img{
+    height:180px;
+  }
+
+  .exclusive-slider::before,
+  .exclusive-slider::after{
+    width:70px;
+  }
+
+  .slider-btn{
+    width:36px;
+    height:36px;
+    font-size:14px;
+  }
+
+  .slider-btn.left{
+    left:15px;
+  }
+
+  .slider-btn.right{
+    right:15px;
+  }
+
+}
 /* hover */
 
 .slider-btn:hover{
