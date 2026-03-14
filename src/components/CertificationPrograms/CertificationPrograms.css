@@ -119,3 +119,94 @@
 .swiper-button-next{
   right:10px;
 }
+
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+  .cert-section{
+    padding:70px 0;
+  }
+
+  .cert-title{
+    font-size:30px;
+  }
+
+  .cert-slider-wrapper{
+    padding:0 40px;
+  }
+
+  .cert-slider-wrapper::before,
+  .cert-slider-wrapper::after{
+    width:80px;
+  }
+
+  .cert-card img{
+    height:160px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:600px){
+
+  .cert-section{
+    padding:60px 0;
+  }
+
+  .cert-title{
+    font-size:26px;
+    margin-bottom:40px;
+  }
+
+  .cert-slider-wrapper{
+    padding:0 20px;
+  }
+
+  .cert-slider-wrapper::before,
+  .cert-slider-wrapper::after{
+    width:40px;
+  }
+
+  .cert-card img{
+    height:150px;
+  }
+
+  .cert-content{
+    padding:16px;
+  }
+
+  .cert-content h3{
+    font-size:16px;
+  }
+
+  .cert-buttons{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .btn-outline,
+  .btn-primary{
+    width:100%;
+    text-align:center;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+  .cert-card img{
+    height:140px;
+  }
+
+  .cert-title{
+    font-size:22px;
+  }
+
+}
